@@ -14,9 +14,16 @@
 
   
 }
+.grid-item{
+  background-image: url('xmark.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+
+}
 </style>
 </head>
-<body>
+<body style= 'background-color: #000000;'>
 <div id='test' class="grid-container"></div>
 </body>
 <script>
@@ -39,7 +46,7 @@ function myFunction(keyid){
   console.log(ele.className)
   if (ele.className == 'img-fluid'){
     ele.classList.add('dead')
-    ele.style= "filter: grayscale(100%) ";
+    ele.style= "filter: grayscale(100%) ; opacity: .5 ";
   }
   else{
     ele.classList.remove('dead')
