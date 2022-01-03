@@ -36,10 +36,10 @@ var characters = {"0":{"id":"Dwight","name":"Dwight Fairfield","role":"survivor"
 for (let key in characters) {
   if(characters[key]["role"]== "survivor"){
     console.log(text)
-    text+=  "<div class='grid-item'> <img onclick='myFunction("+key+")'' src='" + characters[key]["image"] + "' id='" + key +  "'class='img-fluid'></div>\n"
+    text+=  "<div class='grid-item'> <img onclick='myFunction("+key+")'' src='" + characters[key]["image"] + ".png' id='" + key +  "'class='img-fluid'></div>\n"
   }
 }
-text+= "<div class='grid-item'> <img src='random.png'class='img-fluid'></div>\n"
+text+= "<div class='grid-item'> <img src='random.png.png'class='img-fluid'></div>\n"
 document.getElementById('test').innerHTML=text
 function myFunction(keyid){
   var ele = document.getElementById(keyid)
